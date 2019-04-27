@@ -9,13 +9,17 @@
   </head>
   <body ng-app="LunchApp">
     <div ng-controller="LunchController" class="container">
+      <h1>Lunch Checker</h1>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
 
-          <input type="text" style="width: 100%" ng-model="lunch" placeholder="enter your lunch seperated by comma">
+        <input type="text" style="width: 100%;margin-bottom: 10px" ng-model="lunch" placeholder="enter your lunch seperated by comma">
         </div>
       </div>
-      <button ng-click="checkLunch();" type="button" >Check If Too Much</button>
+
+        <button  ng-click="checkLunch();" type="button" >Check If Too Much</button>
+
+
       <div >
           {{msg}}
       </div><p>Do not consider empty items</p>
